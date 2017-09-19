@@ -1,4 +1,8 @@
 #include <windows.h>
+#include <string>
+
+using namespace std;
+
 
 /* This is where all the input to the window goes to */
 LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
@@ -9,6 +13,47 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 			PostQuitMessage(0);
 			break;
 		}
+		/* This section allows for printed text to appear on the window */
+		case WM_PAINT: {
+			PAINTSTRUCT ps;
+			HDC hdc = BeginPaint (hwnd, &ps);
+			TextOut (
+				hdc,
+				10,//Horizontality, higher number => goes East
+				10, //Verticality, higher number => goes South
+				"Welcome to the OSR Converter", 
+				28 //Size of the text above, in char, including space
+				);
+				
+				
+			TextOut (
+				hdc,
+				10,//H
+				50, //V
+				"Made by Uros, Anne, Ryan and Christopher", 
+				41 //Size of the text above, in char, including space
+				);	
+			EndPaint(hwnd, &ps);
+			break;
+		}
+		case WM_CREATE: {
+			CreateWindow(TEXT("button"), TEXT("Quit"),    
+		             WS_VISIBLE | WS_CHILD ,
+		             20, // Horizontality, higher number => goes East
+					 400,// Verticality, higher number => goes South
+					 80, //Size(s) of button. Leave as is
+					 25,
+		             hwnd, (HMENU) 1, NULL, NULL);    
+
+	    	CreateWindow(TEXT("button"), TEXT("Next"),    
+		             WS_VISIBLE | WS_CHILD ,
+		             500, //H
+					 400, //V
+					 80,
+					 25,        
+		             hwnd, (HMENU) 2, NULL, NULL);  
+			break;
+		}
 		
 		/* All other messages (a lot of them) are processed using default procedures */
 		default:
@@ -16,6 +61,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 	}
 	return 0;
 }
+
+
 
 /* The 'main' function of Win32 GUI programs: this is where execution starts */
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
