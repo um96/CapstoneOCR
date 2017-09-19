@@ -43,7 +43,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					 400,// Verticality, higher number => goes South
 					 80, //Size(s) of button. Leave as is
 					 25,
-		             hwnd, (HMENU) 1, NULL, NULL);    
+		             hwnd, (HMENU) ID_QUIT, NULL, NULL);    
 
 	    	CreateWindow(TEXT("button"), TEXT("Next"),    
 		             WS_VISIBLE | WS_CHILD ,
@@ -51,9 +51,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					 400, //V
 					 80,
 					 25,        
-		             hwnd, (HMENU) 2, NULL, NULL);  
+		             hwnd, (HMENU) ID_NEXT, NULL, NULL);  
 			break;
 		}
+		
 		
 		/* All other messages (a lot of them) are processed using default procedures */
 		default:
@@ -111,3 +112,4 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	}
 	return msg.wParam;
 }
+
