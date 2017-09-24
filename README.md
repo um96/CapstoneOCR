@@ -33,4 +33,5 @@ Planned for Week 5:
   [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
   [ ] PDF -> Word?
   [ ] Image (.png, .jpeg) -> Word (This is our main part of the project)
+  [ ] Login page
 
