@@ -22,8 +22,9 @@ Uros
 Anne Liang
 For Week 4:
 [ ] Create a mockup for a website for the OCR Conversion (I am using Balsamic Mockups)
-  [ ] Allow Login? - Gmail, Facebook - To keep record of files converted (Mockup of Login Page *may be optional*)
+  [x] Allow Login? - Gmail, Dropbox - To keep record of files converted (Mockup of Login Page *may be optional*)
   [x] General Homepage
+  [ ] Other possible pages: Result Page, Profile, About
 [x] Upload instructions for GitHub Bash
 
 Planned for Week 5:
