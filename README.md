@@ -17,3 +17,19 @@ Cya in class
 
 Uros
 
+
+
+Anne Liang
+For Week 4:
+[ ] Create a mockup for a website for the OCR Conversion (I am using Balsamic Mockups)
+  [ ] Allow Login? - Gmail, Facebook - To keep record of files converted (Mockup of Login Page *may be optional*)
+  [x] General Homepage
+[x] Upload instructions for GitHub Bash
+
+Planned for Week 5:
+[ ] Research for certain functions to be on the Website (HTML, CSS, JavaScript):
+  [ ] File Upload - restrict so only certain formats are accepted
+  [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
+  [ ] PDF -> Word?
+  [ ] Image (.png, .jpeg) -> Word (This is our main part of the project)
+
