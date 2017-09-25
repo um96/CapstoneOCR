@@ -6,9 +6,10 @@ For Week 4:
   [ ] Other possible pages: Result Page, Profile, About
 [x] Upload instructions for GitHub Bash
 
-Planned for Week 5:
+For Week 5:
 [ ] Research for certain functions to be on the Website (HTML, CSS, JavaScript):
-  [ ] File Upload - restrict so only certain formats are accepted
+  [x] File Upload - restrict so only certain formats are accepted
+    [ ]Limit on what files can be accepted (PHP)
   [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
   [ ] PDF -> Word?
   [ ] Image (.png, .jpeg) -> Word (This is our main part of the project)
