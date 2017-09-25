@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:skyblue;">
+
+<style>
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 7px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+</style>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+<center><h1 style="font-family:verdana; color:purple;">OCR Conversion</h1></center>
+<center><p>Welcome. You can convert images/PDF into word documents.</p></center>
+
+<style type="text/css">
+article {
+  float: left;
+  width: 200px;
+}
+
+aside {
+  float: right;
+  width: 200px;
+}
+
+#wrap {
+  width: 600px;
+  margin:  0px auto;
+}
+</style>
+
+<div id="wrap">
+  <article>
+  <center>
+	<br/>
+  	<br/>
+    <p>Please select a file to convert (Files include PNG, JPEG, and PDF files)</p>
+    <br/>
+    <button class="btn" type="submit">Upload File</button>
+    </center>
+  </article>
+  <aside>
+  <center>
+  	<br/>
+  	<br/>
+  	<br/>
+    [An image will be here]
+     <br/>
+     <br/>
+     <p> This website is to help convert image and pdf files into word documents. This is convenient for users who have trouble getting text from image and pdf files, which most of the time, don't preserve the text accurately.</p>
+     </center>
+  </aside>
+</div>
+
+</body>
+</html>
