@@ -4,8 +4,14 @@
 using namespace std;
 
 
+
 /* This is where all the input to the window goes to */
 LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
+	
+	
+	enum {ID_QUIT,ID_NEXT}; //Button IDs
+
+
 	switch(Message) {
 		
 		/* Upon destruction, tell the main thread to stop */
@@ -13,6 +19,18 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 			PostQuitMessage(0);
 			break;
 		}
+		case WM_COMMAND: {
+   			if ( LOWORD( wParam ) == ID_QUIT ) {
+       			//Quit was pressed, exit the program.
+       			DestroyWindow(hwnd);
+   			}
+
+   		break;
+		}
+		case WM_CLOSE: {
+			DestroyWindow(hwnd);
+		}
+
 		/* This section allows for printed text to appear on the window */
 		case WM_PAINT: {
 			PAINTSTRUCT ps;
@@ -23,7 +41,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 				10, //Verticality, higher number => goes South
 				"Welcome to the OSR Converter", 
 				28 //Size of the text above, in char, including space
-				);
+			);
 				
 				
 			TextOut (
@@ -32,7 +50,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 				50, //V
 				"Made by Uros, Anne, Ryan and Christopher", 
 				41 //Size of the text above, in char, including space
-				);	
+			);	
 			EndPaint(hwnd, &ps);
 			break;
 		}
@@ -112,4 +130,3 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	}
 	return msg.wParam;
 }
-
