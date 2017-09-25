@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+</head>
 <body style="background-color:skyblue;">
 
 <!--This is the Homepage of the website-->
-<p style="font-family:verdana";p align="right"><a href=""><font size="-1">Login / Sign Up</font></a></p>
-<strong><center><h1 style="font-family:verdana; color:purple;">OCR Conversion</h1></center></strong>
+<p style="font-family:verdana";p align="right"><a href=""><font size="+1">Login / Sign Up</font></a></p>
+<strong><center><h1 style="font-family:verdana; color:purple;"><font size="+4">OCR Conversion</font></h1></center></strong>
 
-<center><p style="font-family:verdana; color:black;"><font size="+1">Welcome. You can convert images/PDF into word documents.</font></p></center>
+<center><p style="font-family:verdana; color:black;"><font size="+2">Welcome. You can convert images/PDF into word documents.</font></p></center>
 
 <!--This is the section where the page is separated to two columns-->
 <style type="text/css">
@@ -31,23 +34,24 @@ aside {
 <div id="wrap">
   <article>
   <center>
-  <br/>
-    <br/>
+	<br/>
+  	<br/>
     <p><font size="+1">Please select a file to convert (Files include PNG, JPEG, and PDF files)</font></p>
     <br/>
     <form action="upload.php" method="post" enctype="multipart/form-data">
     <font size="+1">Select image to upload:</font>
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Upload Image" name="submit">
-  </form>
+	</form>
     </center>
   </article>
+  
 <!--Second column-->  
   <aside>
   <center>
-    <br/>
-    <br/>
-    <br/>
+  	<br/>
+  	<br/>
+  	<br/>
     <img src="https://3.imimg.com/data3/VP/DO/MY-8283682/ocr-conversion-250x250.jpg" alt="OCR">
      </center>
   </aside>
@@ -63,3 +67,5 @@ aside {
 </div>
 </body>
 </html>
+
+
