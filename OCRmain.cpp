@@ -1,7 +1,11 @@
 #include <windows.h>
-#include <string>
+#include <Commdlg.h>
+
 
 using namespace std;
+
+OPENFILENAME ffc; //File_For_conversion
+char fnc[100]; //File_name_converter
 
 
 
@@ -24,9 +28,29 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
        			//Quit was pressed, exit the program.
        			DestroyWindow(hwnd);
    			}
-
+   			if ( LOWORD( wParam ) == ID_NEXT ) {
+   				
+				ZeroMemory( &ffc, sizeof( ffc ));
+				ffc.lStructSize = sizeof ( ffc );
+				ffc.hwndOwner = NULL  ;
+				ffc.lpstrFile = fnc ;
+				ffc.lpstrFile[0] = '\0';
+				ffc.nMaxFile = sizeof( fnc );
+				ffc.lpstrFilter = ".jpg , .jpeg, .png, .bmp\0*.jpg;*.jpeg;*.png;*.bmp\0\0";
+				ffc.nFilterIndex =1;
+				ffc.lpstrFileTitle = NULL ;
+				ffc.nMaxFileTitle = 0 ;
+				ffc.lpstrInitialDir = NULL ;
+				ffc.Flags = OFN_PATHMUSTEXIST|OFN_FILEMUSTEXIST ;
+				GetOpenFileName( &ffc );
+				
+				
+				
+				// Run OCR software using the file. . . 
+			   }
    		break;
 		}
+		
 		case WM_CLOSE: {
 			DestroyWindow(hwnd);
 		}
@@ -55,6 +79,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 			break;
 		}
 		case WM_CREATE: {
+			
+			//CreateWindow() //make listbox
+			
+			
 			CreateWindow(TEXT("button"), TEXT("Quit"),    
 		             WS_VISIBLE | WS_CHILD ,
 		             20, // Horizontality, higher number => goes East
