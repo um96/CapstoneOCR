@@ -12,8 +12,6 @@ For Week 5:
   [x] File Upload - restrict so only certain formats are accepted
     [x]Limit on what files can be accepted (PHP)
   [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
-  [ ] PDF -> Word?
-  [ ] Image (.png, .jpeg) -> Word (This is our main part of the project)
   [x] Login page
   [x] Registration Page
 [ ] Link pages together
