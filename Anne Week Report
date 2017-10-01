@@ -5,15 +5,26 @@ For Week 4:
   [x] General Homepage
   [x] Other possible pages: Result Page, Profile, About
 [x] Upload instructions for GitHub Bash
-[ ] Homepage
+[x] Homepage
 
 For Week 5:
 [ ] Research for certain functions to be on the Website (HTML, CSS, JavaScript):
   [x] File Upload - restrict so only certain formats are accepted
-    [ ]Limit on what files can be accepted (PHP)
+    [x]Limit on what files can be accepted (PHP)
   [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
   [ ] PDF -> Word?
   [ ] Image (.png, .jpeg) -> Word (This is our main part of the project)
   [x] Login page
-  [ ] Registration Page
+  [x] Registration Page
 [ ] Link pages together
+
+For Week 6:
+[ ] What was not done in Week 5
+[ ] Choose a good background for the pages
+[ ] Logo?
+  [ ] Draw a design
+    [ ] Photoshop
+  [ ] Name: OCR Conversion
+[ ] Have pages adapt to different sizes: Use percentages in CSS
+[ ] Database / Save accounts
+[ ] Research Linking application to website 
