@@ -12,3 +12,17 @@ For Week 5:
 [ ] Begin writing code for OCR
 [ ] Research limits to what types of images can be converted using OCR
   [ ] Quality of the image
+
+Week 5:
+
+[ ] Begin writing code for OCR
+[X] Research limits to what types of images can be converted using OCR
+  [X] Quality of the image
+[ ] Began creating database
+  [X] Sample database created
+  [X] Sample table created
+  
+Week 6:
+[ ] Continue work on database
+  [ ] Expand database
+  [ ] Create filestream from website to database
