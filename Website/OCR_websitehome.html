@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p style="font-family:verdana";p align="right"><a href="OCR_websitelogin.html"><font size="+1">Login / Sign Up</font></a></p>
+</head>
+
+<!--Background-->
+<body style="background-color:skyblue;">
+
+<!--This is the Homepage of the website-->
+<strong><center><h1 style="font-family:verdana; color:purple;"><font size="+4">OCR Conversion</font></h1></center></strong>
+
+<center><p style="font-family:verdana; color:black;"><font size="+2">Welcome. You can convert images/PDF into word documents.</font></p></center>
+
+<!--This is the section where the page is separated to two columns-->
+<style type="text/css">
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    article {
+  	float: left;
+  	width: 300px;
+  	height: 250px;
+}
+
+aside {
+  float: right;
+  width: 300px;
+  height: 250px;
+}
+
+#wrap {
+  width: 600px;
+  margin:  10px auto;
+	}
+}
+</style>
+
+<div id="wrap">
+  <article>
+  <center>
+    <p><font size="+2">Please select a file to convert (Files include PNG, JPEG, and PDF files)</font></p>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+    <font size="+2">Select image to upload:</font>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit" formaction="OCR_resultpage.html">
+	</form>
+    </center>
+  </article>
+  
+<!--Second column-->  
+  <aside>
+  <center>
+  	<br/>
+    <a href="/gif/-tz8Xbn" title=""><img src="https://i.makeagif.com/media/10-02-2017/tz8Xbn.gif" alt="" style="width:400px; height=250px;"></a>
+  </center>
+  </aside>
+</div>
+
+<!--Description of Website-->
+
+<center><p><font size="+1"> This website is to help convert image and pdf files into word documents. This is convenient for users who have trouble getting text from image and pdf files, which most of the time, don't preserve the text accurately. Users will be able to do the following things: </font></p></center>
+<center>
+<font size="+1">
+<list>
+  <li>Upload images and save Word Documents</li>
+  <li>Share files and Send files to email or Google Drive</li>
+</list>
+</font>
+</center>
+
+<!--New page - Login page-->
+<div id="Login">
+
+</div>
+</body>
+</html>
+
+
