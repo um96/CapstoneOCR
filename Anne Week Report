@@ -14,7 +14,7 @@ For Week 5:
   [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
   [x] Login page
   [x] Registration Page
-[ ] Link pages together
+[x] Link pages together
 
 For Week 6:
 [ ] What was not done in Week 5
@@ -23,6 +23,6 @@ For Week 6:
   [ ] Draw a design
     [ ] Photoshop
   [ ] Name: OCR Conversion
-[ ] Have pages adapt to different sizes: Use percentages in CSS
+[x] Have pages adapt to different sizes: Use percentages in CSS
 [ ] Database / Save accounts
 [ ] Research Linking application to website 
