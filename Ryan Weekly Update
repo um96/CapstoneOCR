@@ -26,3 +26,16 @@ Week 6:
 [ ] Continue work on database
   [ ] Expand database
   [ ] Create filestream from website to database
+  
+Week 6:
+[X] Continue work on database
+  [X] Expand database
+  [ ] Create filestream from website to database
+  [X] Add file to database
+  
+Week 7:
+[ ] Continue work on database
+  [ ] Retrieve file from database
+  [ ] Create filestream from website to database
+  [ ] Determine primary key for database
+  [ ] Determine limits of database
