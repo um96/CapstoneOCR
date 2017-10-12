@@ -36,7 +36,7 @@ int main(char* argv[], int argc)
 	cout << outText << endl;
 	
 
-	// Release variable & memory
+	// Released variables & memory
 	api->End();
 	delete[] outText;
 	pixDestroy(&image);
