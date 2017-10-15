@@ -1,3 +1,17 @@
+Week 8:
+
+[ ] coding
+   [ ]Visual Studio 
+	[ ] Java
+   [ ] Input header files 
+	[ ] tesseract and leptonica
+	
+	[ ] try simple image formats
+		[ ] .jpeg
+		[ ] .png
+		[ ] .pdf
+
+	[ ] test success of Libray functionality by running from windows command line
 
 
 Week 7:
