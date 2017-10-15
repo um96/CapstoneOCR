@@ -8,27 +8,31 @@ For Week 4:
 [x] Homepage
 
 For Week 5:
-[ ] Research for certain functions to be on the Website (HTML, CSS, JavaScript):
+[x] Research for certain functions to be on the Website (HTML, CSS, JavaScript):
   [x] File Upload - restrict so only certain formats are accepted
     [x]Limit on what files can be accepted (PHP)
-  [ ] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
+  [x] Send email with file (some websites that convert PDF files, etc, allow users to have the file sent to email)
   [x] Login page
   [x] Registration Page
 [x] Link pages together
 
 For Week 6:
-[ ] What was not done in Week 5
-[ ] Choose a good background for the pages
+[x] What was not done in Week 5
+[x] Choose a good background for the pages
 [x] Have pages adapt to different sizes: Use percentages in CSS
-[ ] Database / Save accounts
-[ ] Research Linking application to website 
+[ ] Research Linking application to website -MOVED TO WEEK 8- 
 
 For Week 7:
 [ ] What is not done for previous weeks
-  [ ] Choose a good background for the pages
-  [ ] Logo?
-  [ ] Send email with file (JavaScript)
-[ ] Make pages more animate
-[ ] Database and how it would be connected to website
+  [x] Choose a good background for the pages
+  [ ] Logo? - REMOVED -
+  [x] Send email with file (JavaScript) -CHANGED TO PHP-
 [ ] Save password?
-[ ] Website Host
+
+For Week 8:
+[ ] Make pages more animate
+[ ] Fix pages - dimensions
+[ ] Research
+  [x] Saving files to Google Drive
+  [ ] Upload from Google Drive
+  [x] Research Linking application to website
