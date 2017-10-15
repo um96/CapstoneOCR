@@ -25,13 +25,16 @@ For Week 6:
 For Week 7:
 [ ] What is not done for previous weeks
   [x] Choose a good background for the pages
-  [ ] Logo? - REMOVED -
+  [x] Logo? - REMOVED: NOT DOING -
   [x] Send email with file (JavaScript) -CHANGED TO PHP-
 [ ] Save password?
 
 For Week 8:
 [ ] Make pages more animate
-[ ] Fix pages - dimensions
+[ ] Fix pages
+  [x] dimensions
+  [ ] Google Login button not appearing
+  [x] Fonts - Verdana
 [ ] Research
   [x] Saving files to Google Drive
   [ ] Upload from Google Drive
