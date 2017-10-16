@@ -53,6 +53,7 @@
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
+    font-weight: bold;
 }
 
 #myDiv {
@@ -71,18 +72,18 @@
 }
 </style>
 </head>
-<body onload="myFunction()" style="margin:0;">
-  <font size="+1"><a href="OCR_websitehome.html">Back to Home</a></font>
+<body onload="myFunction()" style="margin:0;" background="tech-background.jpg" >
+  <font size="+1" style="font-family:verdana"><a href="OCR_websitehome.html">Back to Home</a></font>
   <div id="loader"></div>
-  <center><h2>File is being converted</h2></center>
+  <center><h2 style="font-family:verdana">File is being converted</h2></center>
   <center><p><strong>.</strong></p></center>
   <center><p><strong>.</strong></p></center>
   <center><p><strong>.</strong></p></center>
 
 
   <div style="display:none;" id="myDiv" class="animate-bottom">
-    <h2>Converting Complete!</h2>
-    <p>The file has been converted into a word document. Please select what you want to do with the file.</p>
+    <h2 style="font-family:verdana">Converting Complete!</h2>
+    <p style="font-family:verdana">The file has been converted into a word document. Please select what you want to do with the file.</p>
     <button type="button" class="cancelbtn"><a href="OCR_websitehome.html">Cancel</a></button>
   </div>
 

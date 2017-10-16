@@ -1,0 +1,12 @@
+Anne Liang
+CSCI 49900
+
+Sending Emails to User:
+https://www.sitepoint.com/sending-emails-gmail-javascript-api/
+
+Linking App to Website:
+https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/
+
+Save to Google Drive:
+https://developers.google.com/drive/v3/web/savetodrive
+

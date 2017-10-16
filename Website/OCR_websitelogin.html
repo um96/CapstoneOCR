@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:skyblue;">
+<body background="tech-background.jpg">
 
 <style>
 form {
-    border: 3px solid #f1f1f1;
+    border: 1px solid #f1f1f1;
 }
 
 input[type=text], input[type=password] {
@@ -36,14 +36,9 @@ button:hover {
     background-color: #f44336;
 }
 
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
 .container {
-    padding: 16px;
-    margin-top: 70px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 span.psw {
@@ -65,21 +60,25 @@ span.psw {
 </style>
 <body>
 
-<center><h2>OCR Conversion</h2></center>
+<center><h2 style="font-family:verdana"><font size="+2">OCR Conversion</font></h2></center>
 
 <form action="/action_page.php">
   <div class="container">
-    <label><h3><b>Username</b></h3></label>
+    <label><h3 style="font-family:verdana">Username</h3></label>
     <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label><h3><b>Password</b></h3></label>
+    <label><h3 style="font-family:verdana">Password</h3></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
+    <br/>
+    <br/>
+    <br/>
+    <input type="checkbox" checked="checked"><strong>Remember me</strong>
   </div>
-  
-  <center><html lang="en">
+ 
+ <center>
+  <html lang="en">
   <head>
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
@@ -102,15 +101,15 @@ span.psw {
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
       };
-    </script>
-  </body>
-</html>
+      </script>
+    </body>
+  </html>
 </center>
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn"><a href="OCR_websitehome.html">Cancel</a></button>
-    <span class="psw"><a href="OCR_createaccount.html"> New user? </a></span>
-    <span class="psw"><a href="#">Forgot password?</a></span>
+    <span class="psw" style="font-family:verdana"><a href="OCR_createaccount.html"> New user? </a></span>
+    <span class="psw" style="font-family:verdana"><a href="#">Forgot password?</a></span>
   </div>
 </form>
 
