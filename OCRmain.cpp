@@ -1,13 +1,13 @@
 #include <windows.h>
 #include <Commdlg.h>
-
+#include <iostream>
+#include <fstream>
 
 using namespace std;
 
+
 OPENFILENAME ffc; //File_For_conversion
 char fnc[100]; //File_name_converter
-
-
 
 /* This is where all the input to the window goes to */
 LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {
@@ -36,7 +36,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 				ffc.lpstrFile = fnc ;
 				ffc.lpstrFile[0] = '\0';
 				ffc.nMaxFile = sizeof( fnc );
-				ffc.lpstrFilter = ".jpg , .jpeg, .png, .bmp\0*.jpg;*.jpeg;*.png;*.bmp\0\0";
+				ffc.lpstrFilter = ".pdf, .jpg , .jpeg, .png, .bmp\0*.jpg;*.jpeg;*.png;*.bmp\0\0";
 				ffc.nFilterIndex =1;
 				ffc.lpstrFileTitle = NULL ;
 				ffc.nMaxFileTitle = 0 ;
@@ -45,7 +45,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 				GetOpenFileName( &ffc );
 				
 				
-				
+				//MessageBox ( NULL , "File opened successfuly", "File Opened" , MB_OK);
+			
 				// Run OCR software using the file. . . 
 			   }
    		break;
@@ -59,6 +60,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 		case WM_PAINT: {
 			PAINTSTRUCT ps;
 			HDC hdc = BeginPaint (hwnd, &ps);
+
+
 			TextOut (
 				hdc,
 				10,//Horizontality, higher number => goes East
@@ -71,9 +74,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 			TextOut (
 				hdc,
 				10,//H
-				50, //V
-				"Made by Uros, Anne, Ryan and Christopher", 
-				41 //Size of the text above, in char, including space
+				25, //V
+				"Made by Anne Liang, Christopher Eidangbe, Ryan McCormick and Uros Milanovic", 
+				76 //Size of the text above, in char, including space
 			);	
 			EndPaint(hwnd, &ps);
 			break;
@@ -125,7 +128,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	wc.hCursor		 = LoadCursor(NULL, IDC_ARROW);
 	
 	/* White, COLOR_WINDOW is just a #define for a system color, try Ctrl+Clicking it */
-	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);
+	//wc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);
+	wc.hbrBackground = CreatePatternBrush((HBITMAP) LoadImage(0,("ocrbg.bmp"), // 0,_T(
+                                     IMAGE_BITMAP,0,0,
+                                     LR_CREATEDIBSECTION|LR_LOADFROMFILE));
 	wc.lpszClassName = "WindowClass";
 	wc.hIcon		 = LoadIcon(NULL, IDI_APPLICATION); /* Load a standard icon */
 	wc.hIconSm		 = LoadIcon(NULL, IDI_APPLICATION); /* use the name "A" to use the project icon */
