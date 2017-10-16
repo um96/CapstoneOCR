@@ -1,9 +1,16 @@
-Please please please remember to post your reports by midnight. I can't/won't check my emails on Monday mornings to convert it all to pdf and send it, since I get up early enough as it is.  If you can't remember, please set an alarm or mark your schedules or something. . . 
+Since Christopher fully completed basic jpg/png to text conversion, our current leftover tasks are the following:
 
--Uros
+(FEEL 100% FREE TO EDIT THIS IN ANY WAY if you feel something needs more attention or if I've left something out.)
+(I'm also writing this from my perspective - I didn't do any work on the database/website aspects so I'm only speaking from the info that I know . . .)
 
-Also: Now that we're getting in the thick of things, if your file includes .h files or libraries, remember to make a folder of those to post on here as well. Of course this isn't anything we have to worry about this month, but keep it in mind that fi you would like others to run/edit your code, all files should be included . . .
+-Finish anything left with the website, and implement Christopher's code.
+-Any database things left to do
+-Get everyone's input on the program UI- things like text, background, design, etc. - If you have an idea, we can use it
+-Convert PDF to text files
 
+OPTIONAL:
+-Convert more complex jpgs, with smaller text and "broken" text ( text with a line though it, for ex.), ignoring garbage, etc...
+- Anything else?
 
-
- Happy Columbus Day
+Thanks everyone,
+Uros
