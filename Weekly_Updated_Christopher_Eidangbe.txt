@@ -1,17 +1,39 @@
+Week 9:
+
+[ ] coding
+   [ ] Research 
+	[ ] conversion of .pdf to .txt
+   [ ] Visual Studio 
+	[ ] Java
+   [ ] Input header files 
+	[x] tesseract and leptonica
+	
+	[ ] try simple image formats
+		[x] .jpeg
+		[x] .png
+		[ ] .pdf
+[ ] Discussed with my group leader
+
+[ ] Testing
+  [ ] other forms of image
+  [ ] enhance program to detect garbage recognition
+
+	
+
 Week 8:  
 
 [ ] coding
-   [ ]Visual Studio 
+   [ ] Visual Studio 
 	[ ] Java
    [ ] Input header files 
-	[ ] tesseract and leptonica
+	[x] tesseract and leptonica
 	
 	[ ] try simple image formats
-		[ ] .jpeg
-		[ ] .png
+		[x] .jpeg
+		[x] .png
 		[ ] .pdf
 
-	[ ] test success of Libray functionality by running from windows command line
+	[x] test success of Libray functionality by running from windows command line
 
 
 Week 7:
