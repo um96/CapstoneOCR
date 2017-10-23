@@ -77,7 +77,15 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 				25, //V
 				"Made by Anne Liang, Christopher Eidangbe, Ryan McCormick and Uros Milanovic", 
 				76 //Size of the text above, in char, including space
+			);
+			TextOut (
+				hdc,
+				10,//H
+				100, //V
+				"Select an image by clicking 'Begin'", 
+				35 //Size of the text above, in char, including space
 			);	
+			
 			EndPaint(hwnd, &ps);
 			break;
 		}
@@ -94,7 +102,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) 
 					 25,
 		             hwnd, (HMENU) ID_QUIT, NULL, NULL);    
 
-	    	CreateWindow(TEXT("button"), TEXT("Next"),    
+	    	CreateWindow(TEXT("button"), TEXT("Begin"),    
 		             WS_VISIBLE | WS_CHILD ,
 		             500, //H
 					 400, //V
@@ -129,7 +137,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	
 	/* White, COLOR_WINDOW is just a #define for a system color, try Ctrl+Clicking it */
 	//wc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);
-	wc.hbrBackground = CreatePatternBrush((HBITMAP) LoadImage(0,("ocrbg.bmp"), // 0,_T(
+	wc.hbrBackground = CreatePatternBrush((HBITMAP) LoadImage(0,("ocrbg2.bmp"), // 0,_T(
                                      IMAGE_BITMAP,0,0,
                                      LR_CREATEDIBSECTION|LR_LOADFROMFILE));
 	wc.lpszClassName = "WindowClass";
