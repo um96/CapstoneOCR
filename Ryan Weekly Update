@@ -52,3 +52,18 @@ Week 8:
    [ ] Create filestream from website to database
    [ ] Determine primary key for database
    [ ] Determine limits of database
+   
+Week 8:
+[X] Continue work on database
+   [ ] Create filestream from website to database
+   [X] Determine primary key for database
+   [X] Determine limits of database
+
+Week 9:
+[X] Continue work on database
+   [ ] Create filestream from website to database
+   [ ] Setup database to work with the website
+   [ ] Test database
+      [ ] Add users
+      [ ] Add file paths
+      [ ] Retrieve files
