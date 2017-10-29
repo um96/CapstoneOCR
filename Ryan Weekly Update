@@ -67,3 +67,15 @@ Week 9:
       [ ] Add users
       [ ] Add file paths
       [ ] Retrieve files
+Week 9:
+[X] Continue work on database
+   [X] Create table to store user information (email, name, password)
+   [X] Test database
+      [X] Add users
+      [X] Add file paths
+      [X] Retrieve files
+      
+Week 10:
+[ ] Intergrate database into website
+[ ] Test database on website
+[ ] Test run of the entire project
