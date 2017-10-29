@@ -33,17 +33,28 @@ For Week 8:
 [ ] Make pages more animate
 [ ] Fix pages
   [x] dimensions
-  [ ] Google Login button not appearing
+  [ ] Google Login button not appearing - REMOVED - 
   [x] Fonts - Verdana
-[ ] Research
+[x] Research
   [x] Saving files to Google Drive
-  [ ] Upload from Google Drive
+  [x] Upload from Google Drive
   [x] Research Linking application to website
 
 For Week 9:
 [ ] What was not done in previous weeks
-[ ] Choosing specific coding language (Maybe JavaScript) to do OCR Conversion
+[x] Choosing specific coding language (Maybe JavaScript) to do OCR Conversion
 [ ] Can maybe use Google Spreadsheets to make a database for saving login info (just for testing)
-[ ] Change font color of description on Website
-[ ] CGI?
-[ ] Host: Maybe Wix? 
+[x] Change font color of description on Website
+[x] CGI? - Using Tesseract - 
+[ ] Host: Maybe Wix?
+
+For Week 10:
+[ ] Get OCR to work on website
+[ ] Test Website - mainly homepage and result page
+[ ] Demo preparation
+[ ] Title update for Website pages
+[ ] Make website more animated? To make it look more interesting?
+  [ ] bounce
+  [ ] fade
+[ ] Host
+[ ] Look at database
