@@ -1,0 +1,19 @@
+﻿  OCRMain.cpp
+c:\libs\tesseract\include\tesseract\strngs.h(61): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\libs\tesseract\include\tesseract\unicharset.h(47): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\string.h(343): note: see declaration of 'strncpy'
+c:\libs\tesseract\include\tesseract\unicharset.h(274): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\libs\tesseract\include\tesseract\unicharset.h(299): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdio.h(207): note: see declaration of 'fopen'
+c:\libs\leptonica\include\leptonica\environ.h(277): warning C4005: 'snprintf': macro redefinition
+  c:\libs\tesseract\include\tesseract\platform.h(33): note: see previous definition of 'snprintf'
+c:\libs\leptonica\include\leptonica\pix.h(169): warning C4305: 'initializing': truncation from 'double' to 'l_float32'
+c:\libs\leptonica\include\leptonica\pix.h(171): warning C4305: 'initializing': truncation from 'double' to 'l_float32'
+OCRMain.cpp(68): warning C4996: 'wcstombs': This function or variable may be unsafe. Consider using wcstombs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.15063.0\ucrt\stdlib.h(1019): note: see declaration of 'wcstombs'
+  Generating code
+  All 142 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  OCRMain.vcxproj -> C:\Users\haopx\documents\visual studio 2017\Projects\OCRMain\Release\OCRMain.exe
