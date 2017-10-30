@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>Converting...</title>
 <head>
 <style>
 /* Center the loader */
@@ -56,6 +57,26 @@
     font-weight: bold;
 }
 
+.sendtoemailbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #32CD32;
+    font-weight: bold;
+}
+.downloadbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #32CD32;
+    font-weight: bold;
+}
+
+.savebtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #32CD32;
+    font-weight: bold;
+}
+
 #myDiv {
   display: none;
   text-align: center;
@@ -84,6 +105,22 @@
   <div style="display:none;" id="myDiv" class="animate-bottom">
     <h2 style="font-family:verdana">Converting Complete!</h2>
     <p style="font-family:verdana">The file has been converted into a word document. Please select what you want to do with the file.</p>
+    <button type="button" class="downloadbtn" onclick="download('One Two Three', 'myFile.txt', 'text/plain')"><a href="#" id="a">Download file</a></button>
+
+    <script type="text/javascript">
+      function download(text, name, type) {
+        var a = document.getElementById("a");
+        var file = new Blob([text], {type: type});
+        a.href = URL.createObjectURL(file);
+        a.download = name;
+      }
+
+    </script>
+
+    <button type="button" class="savebtn"><a href="OCR_websitehome.html">Save file</a></button>
+    <button type="button" class="sendtoemailbtn"><a href="sendemail.html">Send to email</a></button>
+    <br>
+    <br>
     <button type="button" class="cancelbtn"><a href="OCR_websitehome.html">Cancel</a></button>
   </div>
 

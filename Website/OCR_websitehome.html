@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
+<title>OCR Conversion</title>
 <head>
+
 <strong>
   <p style="font-family:verdana"; align="right"><a href="OCR_websitelogin.html"><font size="+1">Login / Sign Up</font></a></p>
 </strong>
 </head>
 
+<!--Link the animation page-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="w3-container w3-center w3-animate-opacity">
 <!--Background-->
 <body background="tech-background.jpg">
 
 <!--This is the Homepage of the website-->
-<strong><center>
-  <h1 style="font-family:verdana; color:purple;"><font size="+4">OCR Conversion</font></h1>
-</center></strong>
+<center>
+  <h1 style="font-family:verdana; color:purple;"><font size="+3"><strong>OCR Conversion</strong></font></h1>
+</center>
 
 <center>
-  <p style="font-family:verdana; color:black;"><font size="+2">Welcome. You can convert images/PDF into word documents.</font></p>
+  <p style="font-family:verdana; color:black;"><font size="+2">Welcome. You can convert images with text into text files.</font></p>
 </center>
+</div>
 
 <!--This is the section where the page is separated to two columns-->
 <style type="text/css">
@@ -39,21 +46,35 @@ aside {
 }
 
 #wrap {
-  width: 600px;
-  margin:  10px auto;
+  width: 500px;
+  margin:  5px auto;
 	}
 }
+
+
 </style>
 
+<!--Upload File-->
 <div id="wrap">
   <article>
   <center>
-    <p style="font-family:verdana";><font size="+2">Please select a file to convert (Files include PNG, JPEG, and PDF files)</font></p>
+    <p style="font-family:verdana";><font size="+2">Please select a file to convert (Files include PNG and JPEG files)</font></p>
+    <script>
+
+    var convert = function() {
+    $.ajax( "ocrconvert.php" ).done(function( msg ) {
+        alert( "new word is " + msg );
+    });
+    }
+
+    </script>
+
     <form action="upload.php" method="post" enctype="multipart/form-data">
     <font font face="verdana" size="+2">Select image to upload:</font>
     <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit" formaction="OCR_resultpage.html">
-	</form>
+    <input type="submit" value="Upload Image" name="submit" formaction="OCR_resultpage.html" src="">
+    <!--<button onclick="convert()">Upload Image</button>-->
+	  </form>
     </center>
   </article>
   
@@ -61,25 +82,24 @@ aside {
   <aside>
   <center>
   	<br/>
-    <a href="/gif/-tz8Xbn" title=""><img src="https://i.makeagif.com/media/10-02-2017/tz8Xbn.gif" alt="" style="width:400px; height=250px;"></a>
+    <a href="/gif/-tz8Xbn" title=""><img src="https://i.makeagif.com/media/10-02-2017/tz8Xbn.gif" alt="" style="width:370px; height=230px;"></a>
   </center>
   </aside>
 </div>
 
 <!--Description of Website-->
-
-<center><p style="font-family:verdana";><font size="+1"> This website is to help convert image and pdf files into word documents. This is convenient for users who have trouble getting text from image and pdf files, which most of the time, don't preserve the text accurately. Users will be able to do the following things: </font></p></center>
+<div class="w3-container w3-center w3-animate-bottom" >
+<center><p style="font-family:verdana";><font size="+1" color="purple";> This website is to help convert image and pdf files into word documents. This is convenient for users who have trouble getting text from image and pdf files, which most of the time, don't preserve the text accurately. Users will be able to do the following things: </font></p></center>
 <center>
-<font face="verdana" size="+1">
+<font face="verdana" size="+1" color="purple">
 <list>
   <li>Upload images and save Word Documents</li>
   <li>Share files and Send files to email or Google Drive</li>
 </list>
 </font>
 </center>
+</div>
 
-<!--New page - Login page-->
-<div id="Login">
 
 </div>
 </body>
