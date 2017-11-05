@@ -1,7 +1,6 @@
 Week 11 
-
 [ ] coding
-   [ ] pdf to txt
+   [ ] .pdf to .txt
    [ ]image alignment
    [ ]line through text
    [ ]testing smaller text
