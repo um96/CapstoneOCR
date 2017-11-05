@@ -1,8 +1,41 @@
+Week 11 
+
+[ ] coding
+   [ ] pdf to txt
+   [ ]image alignment
+   [ ]line through text
+   [ ]testing smaller text
+   [ ]Enhanaced detecting and ignoring garbage
+   [ ]Lighting detection (dark and bright image)
+   [x] Worked on combined codes modification (UI and Api)
+   [ ] Research 
+	[ ] conversion of .pdf to .txt
+[x] Group advise
+   [x] Work to synch workload with group leader and other members of the team
+   [x]Focus on Alpha Demo
+   [x]Work with group members
+
+   [ ] Visual Studio 
+	[ ] Java
+   [ ] Input header files 
+	[x] tesseract and leptonica
+	
+	[ ] try simple image formats
+		[x] .jpeg
+		[x] .png
+		[ ] .pdf
+[x] Discussed with my group leader
+
+[ ] Testing
+  [ ] other forms of image
+  [ ] enhance program to detect garbage recognition
+
+
 Week 10 (Carrying over task from Week 9):
-[ ] Group advise
-   [ ] Work to synch workload with group leader and other members of the team
-   [ ]Focus on Alpha Demo
-   [ ]Work with group members
+[x] Group advise
+   [x] Work to synch workload with group leader and other members of the team
+   [x]Focus on Alpha Demo
+   [x]Work with group members
 
 [ ] coding
    [x] Worked on combined codes modification (UI and Api)
