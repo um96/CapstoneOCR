@@ -1,0 +1,32 @@
+
+//Draws a line straight under text . . .
+//int under_txt;
+/*
+VOID LinePaint(HDC hdc)
+{
+   Graphics graphics(hdc);
+   Pen      pen(Color(255, 0, 0, 255));
+   graphics.DrawLine(&pen, 0, under_txt, 200, under_txt);
+}                          x      y       z      q
+										200 needs to be horizontal end of screen value
+// (x,y) is start, (z,q) is end
+*/
+
+
+/*
+
+      hdc = BeginPaint(hWnd, &ps);
+      LinePaint(hdc);
+      EndPaint(hWnd, &ps);
+      return 0;
+      
+*/     
+
+/* output would be something akin to 
+
+Text here
+--------------------------------------------
+If line crosses text, image isnt straight enough
+(So should one draw the line on the text, or make a new copy image, draw it there, discard it, then proceed?)
+
+*/ 
