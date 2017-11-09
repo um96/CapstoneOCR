@@ -79,3 +79,16 @@ Week 10:
 [ ] Intergrate database into website
 [ ] Test database on website
 [ ] Test run of the entire project
+
+Week 10:
+[ ] Intergrate database into website
+[ ] Test database on website
+[X] Test run of the entire project
+
+Week 11:
+[ ] Intergrate database into website
+[ ] Test database on website
+[ ] Continue work on databases
+   [ ] Add multiple file paths to users row in table
+   [ ] Delete specific files based on user input
+   [ ] Add data to Login table from Google login

@@ -1,3 +1,14 @@
+We are presenting THURSDAY, along with two other groups.
+Be ready!!
+
+
+
+
+
+
+
+
+
 Since Christopher fully completed basic jpg/png to text conversion, our current leftover tasks are the following:
 
 (FEEL 100% FREE TO EDIT THIS IN ANY WAY if you feel something needs more attention or if I've left something out.)
