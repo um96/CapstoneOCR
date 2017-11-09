@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+<script>
+	var Tesseract = require('tesseract.js')
+	Tesseract.recognize(myImage)
+         .progress(function  (p) { console.log('progress', p)    })
+         .then(function (result) { console.log('result', result) })
+
+    Tesseract.detect(myImage)
+		.then(function(result){
+		    console.log(result)
+		})
+
+	Tesseract.recognize(myImage)
+	    .progress(message => console.log(message))
+	    .catch(err => console.error(err))
+	    .then(result => console.log(result))
+	    .finally(resultOrError => console.log(resultOrError))
+
+</script>
+
+</html>

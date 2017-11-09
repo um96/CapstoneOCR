@@ -4,7 +4,7 @@
 </head> 
 <body> 
 <?c++ 
-     cout << c++info() << endl; 
+     cout << "c++info()" << endl; 
 ?> 
 </body> 
 </html>
