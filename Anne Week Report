@@ -68,3 +68,4 @@ For Wrrk 12:
 [ ] Update page links with Github hosting
 [ ] Tesseract and Leptonica - Uding Node.js 
   [ ] Get C++ cide into Node.js as a child process
+  [ ] https://nodeaddons.com/getting-your-c-to-the-web-with-node-js/
