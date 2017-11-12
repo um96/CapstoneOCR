@@ -1,3 +1,9 @@
+Week 12 
+[ ] coding
+   [ ] .pdf to .txt
+   [ ]image alignment and rotation
+   [ ] Worked with team in migrating content to the web.
+
 Week 11 
 [ ] coding
    [ ] .pdf to .txt
@@ -30,117 +36,4 @@ Week 11
   [ ] enhance program to detect garbage recognition
 
 
-Week 10 (Carrying over task from Week 9):
-[x] Group advise
-   [x] Work to synch workload with group leader and other members of the team
-   [x]Focus on Alpha Demo
-   [x]Work with group members
-
-[ ] coding
-   [x] Worked on combined codes modification (UI and Api)
-   [ ] Research 
-	[ ] conversion of .pdf to .txt
-   [ ] Visual Studio 
-	[ ] Java
-   [ ] Input header files 
-	[x] tesseract and leptonica
-	
-	[ ] try simple image formats
-		[x] .jpeg
-		[x] .png
-		[ ] .pdf
-[ ] Discussed with my group leader
-
-[ ] Testing
-  [ ] other forms of image
-  [ ] enhance program to detect garbage recognition
-
-	
-Week 9:
-
-[x] Group Leader advise
-  [x] Concretization and finalization of getting present task
-[ ] coding
-   [x] Worked on combined codes modification (UI and Api)
-   [ ] Research 
-	[ ] conversion of .pdf to .txt
-   [ ] Visual Studio 
-	[ ] Java
-   [ ] Input header files 
-	[x] tesseract and leptonica
-	
-	[ ] try simple image formats
-		[x] .jpeg
-		[x] .png
-		[ ] .pdf
-[ ] Discussed with my group leader
-
-[ ] Testing
-  [ ] other forms of image
-  [ ] enhance program to detect garbage recognition
-
-	
-
-Week 8:  
-
-[ ] coding
-   [ ] Visual Studio 
-	[ ] Java
-   [ ] Input header files 
-	[x] tesseract and leptonica
-	
-	[ ] try simple image formats
-		[x] .jpeg
-		[x] .png
-		[ ] .pdf
-
-	[x] test success of Libray functionality by running from windows command line
-
-
-Week 7:
-
-[ ] OCR (continued research) 
-
-[ ] coding
-	[x] Draft
-	
-	[x] Task assigned #4
-		[ ] Formulate codes for part 1, 2, 3 to do 4
-
 	[ ] Update/progress
-
-Week 6:
-
-[ ] OCR (continued research) 
-
-[ ] coding
-	[x] Draft
-
-	[ ] Update/progress
-
-	
-
-
-
-Week 5: 
-[x] In-depth understanding of functionality for OCR 
-
-[x] Database (aborted due to duplicity)
-
-[ ] UI  
-
-[ ] Java 
-
-[ ] Web hosting
-
-
-
-Week 4: Researched: 
-
-[x] Read up on UI 
-
-[x] Input and Output Layout 
-
-[x ] Learn GitHub instruction and commands 
-
-[x] commit and push e.t.c. 
