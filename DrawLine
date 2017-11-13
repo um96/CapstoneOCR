@@ -1,3 +1,8 @@
+//Magick++ has a deskew() function, which works simialrly to the functions described here,
+//but ultimately renders everything here as redundant...
+
+
+
 
 //Draws a line straight under text . . .
 //int under_txt;
