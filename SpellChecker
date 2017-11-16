@@ -1,0 +1,185 @@
+//A method of improving OCR accuracy
+//Instead of figuring out ways to improvre the software directly (so far a fruitless search), I've decided
+//on instead implementing a simple spellcheck program. It will simply check if words the OCR writes are
+//equal to words in a dictionary. If so, do nothing. If not, check if there is a word with 1 letter difference,
+//if so, replace it. If no match, do nothing.
+
+//This idea comes from the OCR software often misreading Uros as Ur-os, which could easily be corrected if "Uros"
+//was a word stored in a database. It is only one character off so it is easy to match.
+
+//The code is still incomplete, and it is only posted here to be finished on the 16th in class
+
+
+
+
+
+
+
+/*
+ HashTable<string> hash_table;
+  
+  string str_dict_fname = dict_filename; // + ".txt";
+  string str_doc_fname = doc_filename; // + ".txt";
+  
+  string one_word = "";
+  
+  ifstream dict (str_dict_fname);
+  if (dict.is_open()) {
+  	while( dict >> one_word) {
+  		hash_table.Insert(one_word); //inserts all words to the hash table first.
+	  }
+	  
+	  dict.close();
+  	string typo_word ="";
+  
+  
+ 	 string part1 = "";
+  	string part2 = "";
+  	string attempt_solution = "";
+  	
+  	vector<string> solution_list;
+  	//For one typo, all solutions from each case are put in this vector.
+  	//When all solutions for one case are found, they are displayed on the screen.
+  	//After displaying, the vector is emptied, then refilled with the other cases one at a time.
+  	//after all cases, the list is emptied.
+  
+  	vector<string> past_typos;
+  	//All typos, regardless if they have a correction or not, will be stored here.
+  	//The program first checks if a word is in the hash. If it is, then it checks if it is in the vector.
+  	//If it is in the vector, then it was already checked for solutions, and will be skipped.
+  	//Example: the word napster appears multiple times in the text. After being checked for corrections and displayed once,
+  	//it will no longer be displayed again, and will be ignored.
+  
+ 	 bool solution_exists = false;
+  
+  	ifstream doc (str_doc_fname);
+  	if (doc.is_open()) {
+  		while(doc >> one_word) {
+  		
+  			if(one_word[one_word.size() - 1] < 65){
+  				one_word.resize(one_word.size() - 1);
+  				//If the last letter is a non-letter character, it is removed. 
+  				//The word is edited and checked for typos in its edited state.
+			}
+			if(one_word[0]  < 97) {
+				char cap_letter = one_word[0];
+				cap_letter = tolower(cap_letter);
+				one_word = one_word.erase(0, 1);
+				one_word = cap_letter + one_word;
+				//If the first letter is a capital, it is changed to lowercase and kept as such.
+				//This appl]ies to 1-letter words as well.
+							
+			}
+		
+			if(find(past_typos.begin(), past_typos.end(), one_word) != past_typos.end()){
+				//if word is in past_typos, its already been corrected
+			}
+		
+  			else if(!hash_table.Contains(one_word)){
+  				//3 type of typos : a) missing letter b) extra letter c) swapped letters
+  				typo_word = one_word; 
+  				cout<< typo_word << " -> ";
+				part2 = typo_word;
+				
+				//case b)
+				//attempts to remove a letter at every possible spot, by breaking up the string into two parts.
+				//the 2nd part then loses the first char, starting where part1 is empty and part 2 is the whole word.
+				//then, the part1 becomes a sstring of all the chars previously removed from part 2.
+				//Ex: if the string is "This", in the first iteration of the loop, part 1 will be "", part 2 will be "his"
+				//The next iteration will be part1: "T", part 2 "is", and so on...
+				for(size_t i = 1; i < typo_word.size() + 1; i++) {
+					part1 = part2.substr(0, i); //breaks string up whenever possible into two parts, and removes the 1st letter of part 2.
+					
+					part1.resize(part1.size() - 1);
+					
+					part2.erase(0, i);
+					
+ 					attempt_solution = part1 + part2;
+					if(hash_table.Contains(attempt_solution)) {
+						//found a potential solution
+						solution_exists = true;
+						solution_list.push_back(attempt_solution);				
+					}
+					if(!solution_list.empty()) {
+						for (auto j = solution_list.begin(); j != solution_list.end(); ++j)
+    						cout << *j << " , ";
+    					
+    						cout<<" (case b) ";
+    						solution_list.clear();
+    						past_typos.push_back(one_word);
+    					
+					}
+					part2 = typo_word;
+				}
+
+				// case a)
+				//attempts to add letter at every possible space by breaking the word into two parts
+				//this results in the possible correrction being part 1 + "a character" + part2
+				for (size_t i = 0; i < typo_word.size(); i++) {
+					typo_word = one_word;
+					
+					part1 = typo_word.substr(0, i);
+					
+					part2 = typo_word.erase(0, i);
+					
+					attempt_solution = "";
+				
+					for( int z = 0; z < 26; z++) {
+						char letter_to_add = z + 97;
+						attempt_solution = part1 + letter_to_add + part2;
+					
+						if(hash_table.Contains(attempt_solution)) {
+							//found a potential solution
+							solution_exists = true;
+							solution_list.push_back(attempt_solution);				
+						}
+					
+					}
+					if(!solution_list.empty()) {
+						for (auto j = solution_list.begin(); j != solution_list.end(); ++j)
+    						cout << *j << " , ";
+    					
+    						cout<<" (case a) ";
+    						solution_list.clear();
+    						past_typos.push_back(one_word);
+    					
+					}
+				}
+			
+				
+			//case c)
+			//Simply swaps two consecutive characters. If the output is in the hash, apply correction. If not, repeat with following two characters.
+				typo_word = one_word;
+				for( size_t y = 0; y <typo_word.size() - 1; y ++) {
+					swap(typo_word[y], typo_word[y+1]);
+					if(hash_table.Contains(typo_word)) {
+						//found a solution
+						solution_exists = true;
+						solution_list.push_back(typo_word);
+					}
+					swap(typo_word[y], typo_word[y+1]);
+				
+				}
+				if(!solution_list.empty()) {
+						for (auto j = solution_list.begin(); j != solution_list.end(); ++j)
+    						cout << *j << ',';
+    						
+    						cout<<" (case c) ";
+    						solution_list.clear();
+    						past_typos.push_back(one_word);
+					}
+					
+					
+				cout<<endl;
+				if(solution_exists == false) {
+					past_typos.push_back(one_word);
+					//No solutions were found for this word, so it will be ignored if it is read again
+				}
+				solution_exists = false;
+		 	 }	
+			one_word = "";
+	 		}
+		}
+	}
+}
+*/
