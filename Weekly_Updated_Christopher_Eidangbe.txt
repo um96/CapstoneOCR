@@ -4,6 +4,7 @@ Week 13
 		[x] .pdf to .txt code successful built
 		[ ] debugging execution failure for conversion of .pdf to .txt
    [ ]image alignment and rotation
+
    [ ] Worked with team in migrating content to the web.
 
 
