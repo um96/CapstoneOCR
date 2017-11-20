@@ -1,3 +1,8 @@
+https://www.ibm.com/developerworks/java/tutorials/j-jni/j-jni.html
+here is the link for using C++ code in java that we discussed in class
+
+
+
 Final Presentations are in ONE MONTH (the 13th of dec. onwards)
 
 They solely focus on the technical aspect of the project, with only 4mins or so from 20 being about the project itself.
