@@ -1,26 +1,43 @@
-//A method of improving OCR accuracy
-//Instead of figuring out ways to improvre the software directly (so far a fruitless search), I've decided
-//on instead implementing a simple spellcheck program. It will simply check if words the OCR writes are
-//equal to words in a dictionary. If so, do nothing. If not, check if there is a word with 1 letter difference,
-//if so, replace it. If no match, do nothing.
+//This is intended as code that is to be put on the website.
+//Thus it is missing a bunch of features and C++ aspects.
+//Currently, it does not have an input or outpout filke to work with.
+//It also does nothing with the 'corrected' words
+//This will be implemented once we figure otu the best way to handle it
 
-//This idea comes from the OCR software often misreading Uros as Ur-os, which could easily be corrected if "Uros"
-//was a word stored in a database. It is only one character off so it is easy to match.
-
-//The code is still incomplete, and it is only posted here to be finished on the 16th in class
-
-
-
-
-
+	
+#include <iostream>
+#include <fstream>
 #include "Quadratic_Probing.h"
+#include <tesseract/baseapi.h>
+#include <leptonica/allheaders.h>
 
 
+using namespace std;    
+    
+    
+	char *outText;
+	tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
+			
+	if (api->Init(NULL, "eng")) {
+		//Did not work - display error
 
- HashTable<string> hash_table;
-  
- 
-    string one_word = "";
+	}
+			
+	// Open input image with leptonica library
+	Pix *image = pixRead(ffc);
+			
+	api->SetImage(image);			
+	outText = api->GetUTF8Text();
+			
+	ofstream outFile;
+	//outFile.open(string(ffc.lpstrFile+".txt").c_str());
+	//^Open file on website using website capabilities, not c++ code...
+	outFile << outText;
+	outFile.close();
+	// Release variable & memory
+	api->End();
+	pixDestroy(&image);
+	string one_word = "";
    	string typo_word ="";
   
   
@@ -36,8 +53,15 @@
   	//it will no longer be displayed again, and will be ignored.
   
  	bool solution_exists = false;
+				
+	ifstream inFile;
+	ifstream inFile.open(filename.txt);
+				
+				
+	HashTable<string> hash_table;
   
-  	while(outFile >> one_word) {
+  
+  	while(inFile >> one_word) {
   		
   		if(one_word[one_word.size() - 1] < 65){
   			if((one_word[one_word.size() - 1] > 48) && (one_word[one_word.size() - 1] < 57))
@@ -154,14 +178,18 @@
 				}
 			}
 			if(!solution_exists) {
-					past_typos.push_back(one_word);
-					//No solutions were found for this word, so it will be ignored if it is read again
-				}
+				past_typos.push_back(one_word);
+				//No solutions were found for this word, so it will be ignored if it is read again
+				
+			
+					
+			else {
+				
+			}
 				solution_exists = false;
 		 	 }	
 			one_word = "";
-	 		}
-		}
-	}
-}
+	 	}
+
+
 
