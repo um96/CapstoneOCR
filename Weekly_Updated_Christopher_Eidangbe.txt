@@ -1,6 +1,11 @@
+Week 14 
+[ ] Final project Outline
+[ ] coding
+  [ ] Javascipt ?
+  [ ] Worked with team in migrating content to the web.
 Week 13 
 [ ] coding
-   [ ] .pdf to .txt
+   [x] .pdf to .txt
 		[x] .pdf to .txt code successful built
 		[ ] debugging execution failure for conversion of .pdf to .txt
    [ ]image alignment and rotation
