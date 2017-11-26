@@ -27,7 +27,7 @@ For Week 7:
   [x] Choose a good background for the pages
   [x] Logo? - REMOVED: NOT DOING -
   [x] Send email with file (JavaScript) -CHANGED TO PHP-
-[ ] Save password?
+[ ] Save password? - CANCELED 
 
 For Week 8:
 [x] Make pages more animate
@@ -46,7 +46,7 @@ For Week 9:
 [ ] Can maybe use Google Spreadsheets to make a database for saving login info (just for testing) -CANCELED-
 [x] Change font color of description on Website
 [x] CGI? - Using Tesseract - 
-[ ] Host: Maybe Wix?
+[x] Host: Maybe Wix? - - > Github Pages 
 
 For Week 10:
 [ ] Get OCR to work on website
@@ -55,8 +55,8 @@ For Week 10:
 [x] Title update for Website pages
 [x] Make website more animated? To make it look more interesting?
   [x] bounce
-  [ ] fade
-[ ] Host
+  [ ] fade - CANCELED 
+[x] Host
 [ ] Look at database
 
 For Week 11:
@@ -72,4 +72,9 @@ For Week 12:
   
 For Week 13:
 [ ] Everything not completed in previous weeks
+
+For Week 14:
+[ ] Everything not completed in previous weeks
+  [ ] To host on Github, need to create my own repository from my GitHub to make it work. 
+  [ ] page linking
 
