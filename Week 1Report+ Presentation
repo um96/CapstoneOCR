@@ -1,0 +1,39 @@
+Use this file to add your weekly report, and at the bottom, add your draft of the presentation
+MAke sure to check your em,ail if you're unsure of what the presentation bit is, the prof 
+emailed us about it!
+
+Uros Milanovic
+
+Week 13:
+
+[~] Finish up the project, including full migration to website, full pdf compatibilities, full image “skew” correction, any other details, 
+[x] Prepare for final presentation
+
+Week 14:
+[ ] Implement code using either Node js or JNI
+[ ] Presentation work, rehearsing, adding more slides, etc.
+
+
+
+
+
+
+
+Presentation outline:
+Slide # - Content
+
+1 - Title
+2 - What does this project do? Why use it? (OCR, use it for better organization, editing, etc)
+3 - What can the user do? ( There are currently no user options apart from input/submit and saving results)
+4 - What is the software built on (Software runs using tessaract and liptonica libraries)
+5 - What is tessaract? ( . . . )
+6 - Why did we use it? What did we learn using it? Are there alternatives? ( . . . )
+
+
+
+
+
+I ( Uros) would tackle 1-5, with Chris' help for 6.
+Please add what you would like to talk about, and when. The text in ()'s  is justa small summary of what one would say, while
+the content is roughly what the slide would say/ be about. Remember that the bulk of the presentation should be given orally, 
+with the slides just being bullet points.
