@@ -11,6 +11,8 @@
 #include <tesseract/baseapi.h>
 #include <leptonica/allheaders.h>
 
+#include "words.txt"
+
 
 using namespace std;    
     
@@ -55,7 +57,7 @@ using namespace std;
  	bool solution_exists = false;
 				
 	ifstream inFile;
-	ifstream inFile.open(filename.txt);
+	ifstream inFile.open("words.txt");
 				
 				
 	HashTable<string> hash_table;
