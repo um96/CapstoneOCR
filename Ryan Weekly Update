@@ -136,3 +136,18 @@ Week 14:
 [ ] Test database on website
    [ ] Add data to Login table from Google login
 [ ] Continue work on website
+
+
+Slide: Comtribution to the project
+Slide: Technical Aspect(possible topics: PHP or SQL or Website technique)
+   sub slides to include:
+   slide(1 or 2): Description of technique
+                - How it works
+                - What it is
+   slide(2 or 3): How to use this aspect
+                - Implemenation
+                - Necessary skills and tools
+   slide(1 or 2): Possible applications
+                - Where/How it is used in the real world
+   slide(1): example in our project
+
