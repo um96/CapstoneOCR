@@ -7,14 +7,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
-</style>
 
-<head>
-<style>
 /* Center the loader */
 #loader {
   position: absolute;
@@ -104,32 +102,42 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     }
 }
 </style>
-</head>
 
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-    <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
-  </div>
+<body onload="myFunction()" style="margin:0;" class="w3-blue">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+      <a href="Login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login/Sign Up</a>
+      
+      </div>
+    </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
     <a href="Convert.html" class="w3-bar-item w3-button w3-padding-large">Convert</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Download</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Login/Sign Up</a>
   </div>
 </div>
 
-<!--Result-->
-<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
-<center><h2 style="font-family:verdana">File is being converted</h2></center>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
+  <div id="loader"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+      <center><h2 style="font-family:verdana">File is being converted</h2></center>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <br>
+    <br>
+    <br>
     <h2 style="font-family:verdana">Converting Complete!</h2>
     <p style="font-family:verdana">The file has been converted into a word document. Please select what you want to do with the file.</p>
     <button type="button" class="downloadbtn" onclick="download('One Two Three', 'myFile.txt', 'text/plain')"><a href="#" id="a">Download file</a></button>
@@ -144,11 +152,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
     </script>
 
-    <button type="button" class="savebtn"><a href="OCRHome.html">Save file</a></button>
+    <button type="button" class="savebtn"><a href="OCR_websitehome.html">Save file</a></button>
     <button type="button" class="sendtoemailbtn"><a href="sendemail.html">Send to email</a></button>
     <br>
     <br>
-    <button type="button" class="cancelbtn"><a href="OCRHome.html">Cancel</a></button>
+    <button type="button" class="cancelbtn"><a href="OCR_websitehome.html">Cancel</a></button>
   </div>
 
   <script>
@@ -163,18 +171,5 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     document.getElementById("myDiv").style.display = "block";
   }
 </script>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
 </body>
 </html>
