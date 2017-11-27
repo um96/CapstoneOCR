@@ -1,0 +1,97 @@
+Use this file to add your weekly report, and at the bottom, add your draft of the presentation
+MAke sure to check your em,ail if you're unsure of what the presentation bit is, the prof 
+emailed us about it!
+
+Uros Milanovic
+
+Week 13:
+
+[~] Finish up the project, including full migration to website, full pdf compatibilities, full image “skew” correction, any other details, 
+[x] Prepare for final presentation
+
+Week 14:
+[ ] Implement code using either Node js or JNI
+[ ] Presentation work, rehearsing, adding more slides, etc.
+
+Christopher Eidangbe
+
+
+Week 13
+[ ] coding
+[x] .pdf to .txt
+[x] .pdf to .txt code successful built
+[ ] debugging execution failure for conversion of .pdf to .txt
+[ ]image alignment and rotation
+
+[ ] Worked with team in migrating content to the web.
+
+Week 14 (Revised)
+[ ] Final project Outline
+[ ] coding
+[ ] Research Node js
+[ ] Worked with team in migrating content to the web
+
+
+
+Anne Liang
+
+For Week 13:
+[ ] Everything not completed in previous weeks
+
+For Week 14:
+[ ] Everything not completed in previous weeks
+  [ ] To host on Github, need to create my own repository from my GitHub to make it work. 
+  [ ] page linking
+
+
+Ryan McCormick
+
+Week 13:
+[ ] Intergrate database into website
+[ ] Test database on website
+[X] Continue work on databases
+   [ ] Add data to Login table from Google login
+   [ ] Delete information from table and shift data over to keep in order
+   [x] Test website
+   [x] Determine current status of website
+
+Week 14:
+[ ] Intergrate database into website
+[ ] Test database on website
+   [ ] Add data to Login table from Google login
+[ ] Continue work on website
+
+Format:
+Slide Number - Content of slide (things to talk about in person)
+
+1 - Title
+
+Uros Presents the following:
+
+2 - What does this project do? Why use it? (OCR, use it for better organization, editing, etc)
+3 - What can the user do? ( There are currently no user options apart from input/submit and saving results)
+4 - What is the software built on (Software runs using tessaract and liptonica libraries)
+5 - What is tessaract? ( . . . )
+6 - Why did we use it? What did we learn using it? Are there alternatives? ( . . . )
+ [Number 6 will most likely come after 11]
+
+Chris Presents the following:
+
+7 - OCR using tesseract with C++ implementation (Overview)
+8 - The Choice of Tesseract over other OCR APIs
+9 - Benefits
+10 - Limitations
+11 - Most common IDE used with it
+
+Ryan Presents the following:
+12 - Technical Aspect(possible topics: PHP or SQL or Website technique)
+13 - Description of technique ( How it works / What it is)
+14 - How to use this aspect (Implementation and necessary skills and tools)
+15 - Possible applications (Where/How it is used in the real world)
+16 - Example in our project
+
+Anne Presents the following:
+17 - Benefits of online use of the application
+18 - Components of Website (HTML/CSS/JavaScript/PHP)
+19 - Options for retrieving the document (Download/Email/Upload to Drive) - Access
+20 - Example screenshots of the process in getting an image file converted (Ordered)

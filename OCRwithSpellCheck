@@ -11,6 +11,8 @@
 #include <tesseract/baseapi.h>
 #include <leptonica/allheaders.h>
 
+#include "words.txt"
+
 
 using namespace std;    
     
@@ -32,6 +34,23 @@ using namespace std;
 	ofstream outFile;
 	//outFile.open(string(ffc.lpstrFile+".txt").c_str());
 	//^Open file on website using website capabilities, not c++ code...
+	
+	// PDF file
+	//Edit this when pasted into the website
+	//The if condition needs to check if filename extension is PDF . . .
+	if (strcmp(buffer + ffc.nFileExtension, "pdf") == 0) {
+		char cmd[500];
+		strcpy(cmd, "PDFToImage.exe ");
+		strcat(cmd, buffer);
+		strcat(cmd, " output.png");
+		system(cmd);
+		strcpy(buffer, "output.png");
+	}
+	
+	
+	
+	
+	
 	outFile << outText;
 	outFile.close();
 	// Release variable & memory
@@ -55,7 +74,7 @@ using namespace std;
  	bool solution_exists = false;
 				
 	ifstream inFile;
-	ifstream inFile.open(filename.txt);
+	ifstream inFile.open("words.txt");
 				
 				
 	HashTable<string> hash_table;
