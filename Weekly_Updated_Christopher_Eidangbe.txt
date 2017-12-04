@@ -1,8 +1,15 @@
+
+Week 15
+[ ]Add items to presentations
+[ ]Modifying codes to ensure tesseract to run on website
+[ ]carry-over unfinished items from last Week 14
+
 Week 14 
 [ ] Final project Outline
 [ ] coding
   [ ] Javascipt ?
   [ ] Worked with team in migrating content to the web.
+
 Week 13 
 [ ] coding
    [x] .pdf to .txt
