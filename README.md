@@ -1,4 +1,16 @@
+Presentation breakdown:
+Uros : 1-5
+Chris: 6-7
+Anne : 8, 10-11
+Ryan : 12-End
+
+
+
+
+
+
 https://www.ibm.com/developerworks/java/tutorials/j-jni/j-jni.html
+
 here is the link for using C++ code in java that we discussed in class
 
 
