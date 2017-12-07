@@ -1,0 +1,18 @@
+(8) Besides the application itself, users have the option to access our application online, 
+which is accessible on both desktop and mobile devices. Users can easily login with Google 
+Login and have three options to get their converted file: download, send to email, or save to Drive.
+
+(9) To convert your file, simply go to our website at alimmortal.github.io/Home.html. 
+Logging in or Signing up is optional but recommended. Press the Get Started on the Home page. 
+You'll will need to upload an image file of your choice and will also be able to see an image 
+preview of your upload. Press Upload File and it will begin converting. Once converting is complete, 
+it will show you the options of getting the file. 
+
+(10) Here are screenshots on how it should work. 
+
+(11) There were difficulties while creating the website, specifically, applying the C++ 
+application we had already created, onto the website. There are definitely ways to get it working 
+on the website including: putting the C++ code onto Node.js, Java, or just coding the application 
+using Tesseract in Javascript. However, the problem with this was that the process of getting the 
+C++ onto a Node.js or Java file was complicated, and using Tesseract in Javascript to convert a file 
+was time consuming, taking much more time to convert an image than converting it using C++. 
