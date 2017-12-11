@@ -65,7 +65,7 @@ For Week 11:
 [x] Use Github to host website
 
 For Week 12:
-[ ] Update page links with Github hosting
+[x] Update page links with Github hosting
 [ ] Tesseract and Leptonica - Uding Node.js 
   [ ] Get C++ cide into Node.js as a child process
   [ ] https://nodeaddons.com/getting-your-c-to-the-web-with-node-js/
@@ -79,8 +79,13 @@ For Week 14:
   [x] page linking
   
 For Week 15:
-[ ] Edit the presentation and practice with team
+[x] Edit the presentation and practice with team
 [ ] Wrap up any changes to the Website
-  [ ] Test login
+  [x] Test login
 [ ] Things not done in previous weeks
+
+For Week 16:
+[ ] Presentation 
+[ ] Ocrad.js or Tesseract to work on Website 
+[ ] Send to email 
 
