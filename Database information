@@ -1,0 +1,30 @@
+Insert new User into table titled User which stores the login information:
+
+insert into User (LoginName, PasswordHash, FirstName, LastName) values ('users name', SHA2('password', 224), 'First name', 'Last name');
+
+Create row for user to store there images(done at the same time login information is stored):
+insert into Users (User) values ('LoginName');
+
+In order to update an image stored in the table titled Users:
+
+update Users set  image1 = ( case when ( image1 is null and User = 'keith' and count = 1) then 'hello' else image1 end), 
+image2 = ( case when ( image1 is not null and image2 is null and User = 'keith' and count = 2) then 'hello' else image2 end), 
+image3 = ( case when ( image2 is not null and image3 is null and User = 'keith' and count = 3) then 'hello' else image3 end), 
+image4 = ( case when ( image3 is not null and image4 is null and User = 'keith' and count = 4) then 'hello' else image4 end), 
+image5 = ( case when ( image4 is not null and image5 is null and User = 'keith' and count = 5) then 'hello' else image5 end), 
+image6 = ( case when ( image5 is not null and image6 is null and User = 'keith' and count = 6) then 'hello' else image6 end), 
+image7 = ( case when ( image6 is not null and image7 is null and User = 'keith' and count = 7) then 'hello' else image7 end), 
+image8 = ( case when ( image7 is not null and image8 is null and User = 'keith' and count = 8) then 'hello' else image8 end), 
+image9 = ( case when ( image8 is not null and image9 is null and User = 'keith' and count = 9) then 'hello' else image9 end), 
+image10 = ( case when ( image9 is not null and image10 is null and User = 'keith' and count = 10) then 'hello' else image10 end);
+
+Retrieve file path
+Select (desired image number) from Users where User = LoginName;
+
+Delete stored image path if they do not wish to save the file
+update Users set image1 = NULL where User = 'LoginName';
+
+Delete User from storage:
+delete from User where LoginName = 'user's login name';
+delete from Users where LoginName =  'user's login name';
+
