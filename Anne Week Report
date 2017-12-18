@@ -20,20 +20,20 @@ For Week 6:
 [x] What was not done in Week 5
 [x] Choose a good background for the pages
 [x] Have pages adapt to different sizes: Use percentages in CSS
-[ ] Research Linking application to website -MOVED TO WEEK 8- 
+[x] Research Linking application to website -MOVED TO WEEK 8- 
 
 For Week 7:
-[ ] What is not done for previous weeks
+[x] What is not done for previous weeks
   [x] Choose a good background for the pages
   [x] Logo? - REMOVED: NOT DOING -
-  [x] Send email with file (JavaScript) -CHANGED TO PHP-
+  [x] Send email with file (JavaScript) -CHANGED TO PHP- CANCELED 
 [ ] Save password? - CANCELED 
 
 For Week 8:
 [x] Make pages more animate
-[ ] Fix pages
+[x] Fix pages
   [x] dimensions
-  [ ] Google Login button not appearing - REMOVED - 
+  [x] Google Login button not appearing
   [x] Fonts - Verdana
 [x] Research
   [x] Saving files to Google Drive
@@ -41,7 +41,7 @@ For Week 8:
   [x] Research Linking application to website
 
 For Week 9:
-[ ] What was not done in previous weeks
+[x] What was not done in previous weeks
 [x] Choosing specific coding language (Maybe JavaScript) to do OCR Conversion
 [ ] Can maybe use Google Spreadsheets to make a database for saving login info (just for testing) -CANCELED-
 [x] Change font color of description on Website
@@ -49,7 +49,7 @@ For Week 9:
 [x] Host: Maybe Wix? - - > Github Pages 
 
 For Week 10:
-[ ] Get OCR to work on website
+[x] Get OCR to work on website
 [x] Test Website - mainly homepage and result page
 [x] Demo preparation
 [x] Title update for Website pages
@@ -60,13 +60,13 @@ For Week 10:
 [ ] Look at database
 
 For Week 11:
-[ ] Get OCR to work on website
+[x] Get OCR to work on website
 [ ] tesseract and letonica - in JavaScript
 [x] Use Github to host website
 
 For Week 12:
 [x] Update page links with Github hosting
-[ ] Tesseract and Leptonica - Uding Node.js 
+[ ] Tesseract and Leptonica - Uding Node.js - CANCELED
   [ ] Get C++ cide into Node.js as a child process
   [ ] https://nodeaddons.com/getting-your-c-to-the-web-with-node-js/
   
@@ -80,12 +80,12 @@ For Week 14:
   
 For Week 15:
 [x] Edit the presentation and practice with team
-[ ] Wrap up any changes to the Website
+[x] Wrap up any changes to the Website
   [x] Test login
 [ ] Things not done in previous weeks
 
 For Week 16:
-[ ] Presentation 
-[ ] Ocrad.js or Tesseract to work on Website 
+[x] Presentation 
+[x] Ocrad.js or Tesseract to work on Website 
 [ ] Send to email 
 
