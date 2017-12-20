@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
@@ -110,7 +111,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="Home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
       <a href="Convert.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Convert</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
+      <a href="Download.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Download</a>
       <a href="Login.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login/Sign Up</a>
       
       </div>
@@ -120,6 +121,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="Home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
     <a href="Convert.html" class="w3-bar-item w3-button w3-padding-large">Convert</a>
+    <a href="Download.html" class="w3-bar-item w3-button w3-padding-large">Download</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Login/Sign Up</a>
   </div>
 </div>
@@ -152,8 +154,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
     </script>
 
-    <button type="button" class="savebtn">Save file</button>
-    <button type="button" class="sendtoemailbtn">Send to email</button>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <div class="g-savetodrive"
+       data-src="//alimmortal.github.io/Result.html/to/myfile.txt"
+       data-filename="myfile.txt"
+       data-sitename="OCR Conversion">
+    </div>
+    <button type="button" class="sendtoemailbtn"><a href="sendemail.html">Send to email</a></button>
     <br>
     <br>
     <button type="button" class="cancelbtn"><a href="Home.html">Cancel</a></button>
