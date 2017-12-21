@@ -4,8 +4,8 @@
   <p>I have experience in Java and C++ but I have been focusing on Web Development.</p>
   <p>Listed below are projects I have worked on:</p>
 </center>
-OCR Conversion: <a href="https://alimmortal.github.io/Home.html">alimmortal.github.io/Home.html</a>
-
+- OCR Conversion: <a href="https://alimmortal.github.io/Home.html">alimmortal.github.io/Home.html</a>
+<br>
 <strong>Project: OCR Conversion</strong>
 Project Portion: Website
 Contributors: Anne Liang
@@ -39,5 +39,5 @@ How to Access Wesite:
 
 Problems Encountered / Things I Did Not Complete / Hope to Complete in Future:
 1. Because it was difficult to get the text into a text document and the time limit, the Result.html
-   is not effective and these functions don't really do what they should be doing (pre-made result).
+   is not effective and these functions don't really do what they should be doing (pre-made result). It was done with the onetwothree.png as a demo of how it should work.
 2. I did not make a Sign Out button for the Google Login.
